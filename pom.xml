@@ -15,8 +15,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>    
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>    
     <hibernate.version>5.4.18.Final</hibernate.version>
     <spring.version>5.2.8.RELEASE</spring.version>
   </properties>
@@ -68,9 +68,31 @@
       <scope>runtime</scope>
 	</dependency>
 
-
+	<dependency>
+	  <groupId>javax.servlet</groupId>
+	  <artifactId>javax.servlet-api</artifactId>
+	  <version>4.0.0</version>
+	  <scope>provided</scope>
+	</dependency>
     
-    <!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
+    <dependency>
+        <groupId>javax.servlet.jsp.jstl</groupId>
+        <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+        <version>1.2.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-spec</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-impl</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
   <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
